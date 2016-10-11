@@ -20,6 +20,7 @@ class Payload(object):
                  badge: Optional[int] = None,
                  sound: Optional[str] = None,
                  content_available: Optional[bool] = None,
+                 mutable_content: Optional[bool] = False,
                  category: Optional[str] = None,
                  custom: Optional[Dict[str, Any]] = None) -> None: ...
 
