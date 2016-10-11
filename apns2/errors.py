@@ -1,5 +1,10 @@
 class APNsException(Exception):
-    pass
+
+    def __str__(self):
+        return self.__class__.__name__
+
+    def __unicode__(self):
+        return unicode(self.__str__())
 
 
 class InternalException(APNsException):
